@@ -82,7 +82,7 @@ flutter:
         fileName: file_picker_web
 ```
 
-- [**`file_picker_web.dart`**](https://github.com/FakenMaster/plugin_test_file_picker/blob/master/lib/file_picker_web.dart)
+- [**`file_picker_web.dart`**](https://github.com/FakenMaster/plugin_test_file_picker/blob/main/file_picker_web/lib/file_picker_web.dart)
 ```dart
 import 'package:file_picker_platform_interface/file_picker_platform_interface.dart';
 
