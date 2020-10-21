@@ -1,4 +1,12 @@
-## 1.创建file_picker_platform_interface (package)
+# Flutter编写跨平台库
+生成一个Federated Plugin插件的过程，以前老版开发跨平台插件使用MethodChannel，新版开发方式进行了改进，成为Federated Plugin.
+
+> 相关文章和库:
+> * [How To Write a Flutter Web Plugin: Part 2](https://medium.com/flutter/how-to-write-a-flutter-web-plugin-part-2-afdddb69ece6)
+> * [plugin_platform_interface库](https://pub.dev/packages/plugin_platform_interface)
+> * [Flutter 官方插件列表，跨Desktop和Web的插件都用本文方式实现](https://github.com/flutter/plugins)
+
+## 步骤1. 创建file_picker_platform_interface (package)
 
 - **`生成package命令：`**
 ```s
@@ -50,8 +58,7 @@ class MethodChannelFilePicker extends FilePickerPlatform {
 }
 ```
 
-
-## 2.创建file_picker_web (package)
+## 步骤2. 创建file_picker_web (package)
 - **`生成package命令：`**
 ``` s
 flutter create --template=package file_picker_web
@@ -93,7 +100,7 @@ class FilePickerPlugin extends FilePickerPlatform {
 }
 ```
 
-## 3.创建file_picker (plugin)
+## 步骤3. 创建file_picker (plugin)
 - **`生成plugin命令：`**
 ``` s
 flutter create --template=plugin --platforms=android,ios file_picker
