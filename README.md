@@ -13,7 +13,7 @@
 flutter create --template=package file_picker_platform_interface
 ```
 
-- **`file_picker_platform_interface.dart`**
+- [**`file_picker_platform_interface.dart`**](https://gitee.com/linchenpeng/file_picker/blob/master/file_picker_platform_interface/lib/file_picker_platform_interface.dart)
 ``` dart
 library file_picker_platform_interface;
 
@@ -45,7 +45,7 @@ abstract class FilePickerPlatform extends PlatformInterface {
 }
 ```
 
-- **`method_channel_file_picker.dart`**
+- [**`method_channel_file_picker.dart`**](https://gitee.com/linchenpeng/file_picker/blob/master/file_picker_platform_interface/lib/method_channel_file_picker.dart)
 ``` dart
 const MethodChannel _channel = MethodChannel('plugins.faken.io/file_picker');
 
@@ -64,7 +64,7 @@ class MethodChannelFilePicker extends FilePickerPlatform {
 flutter create --template=package file_picker_web
 ```
 
-- **`pubspec.yaml`**
+- [**`file_picker_web/pubspec.yaml`**](https://gitee.com/linchenpeng/file_picker/blob/master/file_picker_web/pubspec.yaml)
 ```yaml
 /// 添加file_picker_platform_interface以及必要的flutter_web_plugins
 dependency:
@@ -82,7 +82,7 @@ flutter:
         fileName: file_picker_web
 ```
 
-- **`file_picker_web.dart`**
+- [**`file_picker_web.dart`**](https://gitee.com/linchenpeng/file_picker/blob/master/lib/file_picker_web.dart)
 ```dart
 import 'package:file_picker_platform_interface/file_picker_platform_interface.dart';
 
@@ -106,7 +106,7 @@ class FilePickerPlugin extends FilePickerPlatform {
 flutter create --template=plugin --platforms=android,ios file_picker
 ```
 
-- **`file_picker.dart`**
+- [**`file_picker/pubspec.yaml`**](https://gitee.com/linchenpeng/file_picker/blob/master/file_picker/pubspec.yaml)
 ```yaml
 /// 声明使用的库,这样使用了该库的项目就会根据配置生成对应平台的插件实现了
 
@@ -126,7 +126,7 @@ flutter:
         default_plugin: file_picker_web
 ```
 
-- **`file_picker.dart`**
+- [**`file_picker.dart`**](https://gitee.com/linchenpeng/file_picker/blob/master/file_picker/lib/file_picker.dart)
 ```dart
 import 'dart:async';
 
