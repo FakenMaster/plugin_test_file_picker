@@ -5,6 +5,7 @@
 > * [How To Write a Flutter Web Plugin: Part 2](https://medium.com/flutter/how-to-write-a-flutter-web-plugin-part-2-afdddb69ece6)
 > * [plugin_platform_interface库](https://pub.dev/packages/plugin_platform_interface)
 > * [Flutter 官方插件列表，跨Desktop和Web的插件都用本文方式实现](https://github.com/flutter/plugins)
+> * [本项目地址](https://github.com/FakenMaster/plugin_test_file_picker)
 
 ## 步骤1. 创建file_picker_platform_interface (package)
 
